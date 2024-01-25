@@ -61,6 +61,12 @@
   transition: 1ms ease-in-out;
 }
 
+.navbar-logo{
+  display: none;
+}
+
+
+
 @media (max-width: 768px) {
   .bar {
     color: #fff;
@@ -129,6 +135,12 @@
   .hemburger {
     font-size: 20px;
   }
+
+  .navbar-logo{
+    display: block;
+    font-size: 18px;
+  }
+  
 }
 
 @media (max-width: 500px) {

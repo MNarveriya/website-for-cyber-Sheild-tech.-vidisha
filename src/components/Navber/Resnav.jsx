@@ -5,6 +5,10 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import styled from "styled-components";
 import { devices } from "../pages/Global";
+import { IoMdHome } from "react-icons/io";
+import { FaBookOpen } from "react-icons/fa6";
+import { MdContacts } from "react-icons/md";
+import { DiHtml53DEffects } from "react-icons/di";
 
 const Headingimg = styled.img`
   width: 15%;
@@ -53,16 +57,20 @@ export const Resnav = () => {
           onClick={trigger}
         >
           <Headingimg1 src="https://preview.colorlib.com/theme/courses/assets/img/logo/logo.png.webp" />
-          <Link to="/" className="links">
+          <Link to="/" className="links flex items-center gap-3">
+          <IoMdHome className="navbar-logo"/>
             home
           </Link>
-          <Link to="about" className="links">
+          <Link to="about" className="links flex items-center gap-3">
+         <FaBookOpen className="navbar-logo"/>
             about
           </Link>
-          <Link to="course" className="links">
+          <Link to="course" className="links flex items-center gap-3">
+           <DiHtml53DEffects className="navbar-logo"/>
             course
           </Link>
-          <Link to="contact" className="links">
+          <Link to="contact" className="links flex items-center gap-3">
+          <MdContacts className="navbar-logo"/>
             contact
           </Link>
           <buttons className="flex gap-6 group-buttons">
